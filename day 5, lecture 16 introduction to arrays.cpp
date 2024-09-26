@@ -1,4 +1,4 @@
-// finding minimum and maximum element in array 2 approaches for each
+// MAIN CONTENT IS AT END finding minimum and maximum element in array 2 approaches for each
 #include<iostream>
 using namespace std;
 int main(){
@@ -63,4 +63,10 @@ int main(){
 	cout<<endl;
 	cout<<"size of arrays is "<<sizeof(a)<<endl;//size of arrays is 1 int=4 100*4=400
 	cout<<"elements in arrays "<<sizeof(a)/sizeof(a[0])<<endl;//400/4=100 elements
+	int sum=arr[0];
+	// HW sum of elements in array
+	for(int i=1;i<size;i++){
+		sum=sum+arr[i];
+	}
+	cout<<"sum of elements in array is "<<sum<<endl;
 }
